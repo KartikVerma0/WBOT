@@ -1,6 +1,6 @@
-var path = require("path");
-const mime = require("mime");
-var fs = require("fs");
+var path = require('path');
+const mime = require('mime');
+var fs = require('fs');
 this.injection = function (filename) {
   return new Promise((resolve, reject) => {
     var filepath = path.join(__dirname, filename);

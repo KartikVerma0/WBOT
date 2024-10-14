@@ -1,28 +1,28 @@
-const puppeteer = require("puppeteer-core");
-const _cliProgress = require("cli-progress");
-const spintax = require("mel-spintax");
-const { Client, LocalAuth, MessageMedia } = require("whatsapp-web.js");
-require("./welcome");
-var spinner = require("./step");
-var utils = require("./utils");
-var qrcode = require("qrcode-terminal");
-var path = require("path");
-var argv = require("yargs").argv;
-var rev = require("./detectRev");
-var constants = require("./constants");
-var fs = require("fs");
-const fetch = require("node-fetch");
-const { lt } = require("semver");
-const mime = require("mime");
-const moment = require("moment");
+const puppeteer = require('puppeteer-core');
+const _cliProgress = require('cli-progress');
+const spintax = require('mel-spintax');
+const { Client, LocalAuth, MessageMedia } = require('whatsapp-web.js');
+require('./welcome');
+var spinner = require('./step');
+var utils = require('./utils');
+var qrcode = require('qrcode-terminal');
+var path = require('path');
+var argv = require('yargs').argv;
+var rev = require('./detectRev');
+var constants = require('./constants');
+var fs = require('fs');
+const fetch = require('node-fetch');
+const { lt } = require('semver');
+const mime = require('mime');
+const moment = require('moment');
 // only when server object is there in bot.json
 // take parameter from json
 // only after authentication success from whatsapp
-const graphicalInterface = require("./server/server");
+const graphicalInterface = require('./server/server');
 //TODO: remove this
 // const {write,read}=require('../media/tem')
 
-let configs = require("../bot.json");
+let configs = require('../bot.json');
 
 //console.log(process.cwd());
 
